@@ -19,21 +19,19 @@ FlowOps is a custom internal tool platform designed to automate task submission,
 - REST APIs, JSON
 
 ## 📂 Project Structure
-📂 flowops-internal-tool
-├── 📄 README.md
-├── 📂 apps-script
-│   └── main.gs
-├── 📂 firebase
-│   ├── config.json
-│   └── functions.js
-├── 📂 reports
-│   └── report-template.xlsx
-├── 📂 dashboard (optional)
-│   └── dashboard-design.md
-└── 📂 docs
-   └── setup-guide.md
+├── README.md
+├── apps-script
+│ └── main.gs
+├── firebase
+│ ├── config.json
+│ └── functions.js
+├── reports
+│ └── report-template.xlsx
+├── dashboard (optional)
+│ └── dashboard-design.md
+└── docs
+└── setup-guide.md
 
-   
 ## 📚 Learning Goals
 - Build with Google Apps Script and Google Cloud
 - Work with REST APIs and third-party integrations
