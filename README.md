@@ -1,49 +1,90 @@
-# FlowOps: Internal Tool Builder
 
-FlowOps is a custom internal tool platform designed to automate task submission, routing, notifications, and reporting using Google Workspace, Google Apps Script, Google Cloud, and low-code/no-code tools.
+**FlowOps** is a custom-built internal workflow platform that automates task submissions, routing, notifications, and reporting using Google Apps Script, Google Workspace, Firebase, and optional low-code tools like Glide or Retool.
+
+---
 
 ## 🚀 Features
+
 - Submit tasks via Google Forms or Google Sheets
-- Automatically route tasks to the right team using Google Apps Script
-- Send notifications via email or Slack
-- Store task records in Firebase for scalability
+- Automatically assign/reroute tasks based on department/team using Google Apps Script
+- Send real-time notifications via Gmail or Slack (optional API webhook)
+- Store task logs in Firebase for persistent, scalable access
 - Generate dynamic reports in Google Sheets
-- (Optional) Admin dashboard using Glide or Retool
-- (Optional) Integrate automation using Zapier, n8n, or Make
+- Optional: Admin dashboard built with Glide or Retool
+- Optional: Workflow automation via Zapier, n8n, or Make (Integromat)
+
+---
 
 ## 🛠️ Tech Stack
-- Google Workspace (Sheets, Forms, Gmail, Drive)
-- Google Apps Script
-- Google Cloud Platform (Firebase, Cloud Functions)
-- Low-code tools (Glide, Retool, Zapier, n8n)
-- REST APIs, JSON
+
+| Component        | Technology Used |
+|------------------|------------------|
+| Scripting        | Google Apps Script (`main.gs`) |
+| Data Storage     | Firebase Realtime DB or Firestore |
+| UI Input         | Google Forms / Google Sheets |
+| Notifications    | Gmail API / Slack Webhook |
+| Dashboard (opt)  | Glide or Retool |
+| Automation (opt) | Zapier / n8n / Make |
+| APIs             | REST APIs, JSON |
+
+---
 
 ## 📂 Project Structure
 ```
+FlowOps/
 ├── README.md
-├── apps-script
-│ └── main.gs
-├── firebase
-│ ├── config.json
-│ └── functions.js
-├── reports
+├── apps-script/
+│ └── main.gs # Core task logic
+├── firebase/
+│ ├── config.json # Firebase settings
+│ └── functions.js # (Optional) Firebase cloud functions
+├── reports/
 │ └── report-template.xlsx
-├── dashboard (optional)
+├── dashboard/ # (Optional)
 │ └── dashboard-design.md
-└── docs
-└── setup-guide.md
+└── docs/
+└── setup-guide.md # Step-by-step install & deploy
 ```
+---
 
 ## 📚 Learning Goals
-- Build with Google Apps Script and Google Cloud
-- Work with REST APIs and third-party integrations
-- Create scalable digital workflows
-- Prepare for internal tools and automation roles
+
+- Automate internal processes using Google Workspace tools
+- Integrate Apps Script with Firebase and external APIs
+- Explore low-code dashboards for internal visibility
+- Build scalable, real-world digital workflows
+
+---
 
 ## ✅ Project Status
+
 - [x] Planning
-- [ ] Google Sheets & Form Setup
-- [ ] Apps Script Automation
+- [x] Google Form & Sheet Setup
+- [ ] Apps Script Task Automation
 - [ ] Firebase Integration
-- [ ] Reporting Dashboard
-- [ ] Documentation & Deployment
+- [ ] Slack/Gmail Notifications
+- [ ] Dashboard Prototype
+- [ ] Deployment & Documentation
+
+---
+
+## 🧠 How It Helps Companies
+
+FlowOps helps small to mid-sized teams manage internal tasks more efficiently by replacing ad hoc emails or spreadsheet-based routing with automated, centralized workflows. It ensures consistency, traceability, and scalability.
+
+---
+
+## 📸 Screenshots (Coming Soon)
+
+---
+
+## 👤 Author
+
+Eunsuk Lee  
+[GitHub Profile](https://github.com/ChloeLeeFullStackDeveloper)
+
+---
+
+## 📄 License
+
+MIT License
